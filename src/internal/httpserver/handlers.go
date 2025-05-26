@@ -100,7 +100,6 @@ func GetQuotesHandler(service QuoteService) http.HandlerFunc {
 }
 
 func GetRandomQuoteHandler(service QuoteService) http.HandlerFunc {
-	type response = quoteReadDTO
 	return func(w http.ResponseWriter, r *http.Request) {
 		quote, err := service.GetRandomQuote(r.Context())
 		if err != nil {
@@ -108,8 +107,7 @@ func GetRandomQuoteHandler(service QuoteService) http.HandlerFunc {
 			return
 		}
 
-		var resp response
-		resp = quoteFromDomainToReadDTO(quote)
+		var resp = quoteFromDomainToReadDTO(quote)
 
 		err = json.NewEncoder(w).Encode(resp)
 		if err != nil {
@@ -117,7 +115,6 @@ func GetRandomQuoteHandler(service QuoteService) http.HandlerFunc {
 		}
 
 		w.WriteHeader(http.StatusOK)
-		return
 	}
 }
 
