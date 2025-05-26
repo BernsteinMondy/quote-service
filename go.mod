@@ -1,4 +1,4 @@
-module github.com/MaksKazantsev/quote-service
+module github.com/BernsteinMondy/quote-service
 
 go 1.23.8
 

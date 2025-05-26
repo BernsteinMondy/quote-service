@@ -2,8 +2,8 @@ package testhelpers
 
 import (
 	"context"
-	"github.com/MaksKazantsev/quote-service/src/internal/httpserver"
-	"github.com/MaksKazantsev/quote-service/src/internal/service"
+	"github.com/BernsteinMondy/quote-service/src/internal/httpserver"
+	"github.com/BernsteinMondy/quote-service/src/internal/service"
 	"github.com/google/uuid"
 )
 

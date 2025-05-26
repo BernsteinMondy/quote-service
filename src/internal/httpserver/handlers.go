@@ -4,7 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"errors"
-	quoteService "github.com/MaksKazantsev/quote-service/src/internal/service"
+	quoteService "github.com/BernsteinMondy/quote-service/src/internal/service"
 	"github.com/google/uuid"
 	"github.com/gorilla/mux"
 	"net/http"
