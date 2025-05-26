@@ -30,6 +30,9 @@ func (q *QuoteRepository) CreateNewQuote(ctx context.Context, quote *service.Quo
 	}
 
 	rows, err := res.RowsAffected()
+	if err != nil {
+		return fmt.Errorf("get rows affected: %w", err)
+	}
 	if rows == 0 {
 		return service.ErrRepoAlreadyExists
 	}
