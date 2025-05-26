@@ -3,9 +3,9 @@ package httpserver_test
 import (
 	"bytes"
 	"errors"
-	"github.com/MaksKazantsev/quote-service/src/internal/httpserver"
-	"github.com/MaksKazantsev/quote-service/src/internal/httpserver/testhelpers"
-	"github.com/MaksKazantsev/quote-service/src/internal/service"
+	"github.com/BernsteinMondy/quote-service/src/internal/httpserver"
+	"github.com/BernsteinMondy/quote-service/src/internal/httpserver/testhelpers"
+	"github.com/BernsteinMondy/quote-service/src/internal/service"
 	"github.com/gorilla/mux"
 	"net/http"
 	"net/http/httptest"

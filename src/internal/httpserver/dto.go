@@ -1,6 +1,6 @@
 package httpserver
 
-import "github.com/MaksKazantsev/quote-service/src/internal/service"
+import "github.com/BernsteinMondy/quote-service/src/internal/service"
 
 type (
 	quoteReadDTO struct {

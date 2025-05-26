@@ -1,7 +1,7 @@
 package testhelpers
 
 import (
-	"github.com/MaksKazantsev/quote-service/src/internal/service"
+	"github.com/BernsteinMondy/quote-service/src/internal/service"
 	"github.com/google/uuid"
 )
 
